@@ -8,7 +8,7 @@ import {GlobalContextProvider} from './context/GlobalContext'
 function App() {
   return (
     <GlobalContextProvider>
-      <div className="App container-responsive">
+      <div className="App container-responsive border">
         <Header />
         <ViewBooks />
         <Form />
