@@ -40,7 +40,7 @@ export const Form = () => {
     }
     return (
         <div className="container form-control bg-info border m-auto">
-            <form onSubmit={formSubmit} className="form-group text-light">
+            <form onSubmit={formSubmit} className="form-control text-light">
                 <p className="rounded bg-warning text-danger font-weight-bold">ADD A BOOK TO THE STORE</p>
                 <input onChange={handleChange} placeholder="Book Title" type="text" value={title} name="btitle" required className="form-control text-dark" style={{backgroundColor: "#e1e8f0"}}></input>
                 <input onChange={handleChange} placeholder="Name of Author" type="text" value={author} name="bauthor" required className="form-control text-dark" style={{backgroundColor: "#e1e8f0"}}></input>
