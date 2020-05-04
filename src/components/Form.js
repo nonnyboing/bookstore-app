@@ -39,7 +39,7 @@ export const Form = () => {
         setPrice('');
     }
     return (
-        <form onSubmit={formSubmit} className="form-control bg-info">
+        <form onSubmit={formSubmit} className="form-control bg-info container-responsive m-auto">
             <div className="container-responsive bg-info m-auto form-group">
                     <input onChange={handleChange} placeholder="Book Title" type="text" value={title} name="btitle" required className="text-dark form-control" style={{backgroundColor: "#e1e8f0"}}></input>
                     <input onChange={handleChange} placeholder="Name of Author" type="text" value={author} name="bauthor" required className="text-dark form-control" style={{backgroundColor: "#e1e8f0"}}></input>
