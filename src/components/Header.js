@@ -3,7 +3,7 @@ import '../App.css';
 
 export const Header = () => {
     return (
-        <div className="Header rounded container responsive">
+        <div className="Header container responsive">
             BOOK STORE
         </div>
     )
