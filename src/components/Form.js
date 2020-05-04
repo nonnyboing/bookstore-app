@@ -40,11 +40,24 @@ export const Form = () => {
     }
     return (
         <form onSubmit={formSubmit} className="form-control bg-info container-responsive m-auto">
+            <div className="bg-warning h5 text-dark rounded border">ADD A NEW BOOK TO THE STORE</div>
+            <div className="form-group">
+                <div className="form-group">
                     <input onChange={handleChange} placeholder="Book Title" type="text" value={title} name="btitle" required className="text-dark form-control" style={{backgroundColor: "#e1e8f0"}}></input>
+                </div>
+                <div className="form-group">
                     <input onChange={handleChange} placeholder="Name of Author" type="text" value={author} name="bauthor" required className="text-dark form-control" style={{backgroundColor: "#e1e8f0"}}></input>
+                </div>
+                <div className="form-group">
                     <input onChange={handleChange} type="date" name="bdate" value={date} required className="text-dark form-control" style={{backgroundColor: "#e1e8f0"}}></input>
+                </div>
+                <div className="form-group">
                     <input onChange={handleChange} placeholder="Price" type="number" value={price} name="bamount" required className="text-dark form-control" style={{backgroundColor: "#e1e8f0"}}></input><br></br>
+                </div>
+                <div className="form-group">
                     <button className="btn btn-large font-weight-bold btn-warning">ADD BOOK</button>
+                </div>
+            </div>
         </form>
     )
 }
